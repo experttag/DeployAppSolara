@@ -1,0 +1,183 @@
+
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color:#630c02;
+  text-align:center;
+  vertical-align:middle;
+  
+ 
+}
+
+#content{
+    width: 1030px;
+	height:700px;	
+	background-color:white;
+	background-image:url(images/Frame.JPG)
+}
+
+.Container {
+	height: 474px;
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+	background-color: white;
+	color: black;
+	overflow: auto;
+	
+}
+
+
+#banner {
+	height: 172px;
+	width: 1030px;
+	margin: 0px;
+	padding: 0px;
+	background-color:#0099FF;   /*#781206;*/
+	color: black;
+	overflow: auto;
+	text-align: left;
+	
+}
+
+#footer {
+	height: 54px;
+	width: 1030;
+	margin: 0px;
+	padding: 0px;
+	background-color:#781206;
+	color: black;
+	overflow: auto;
+	text-align: center;
+	border-top:3px #fdb930 solid;	
+}
+
+
+#footer_inner{    			
+	border-top:3px #f47b20 solid;	
+	padding:1 0 1 0 ;
+	
+}
+
+#footer_inner table tr td img,#footer_inner table tr td a img{
+	border-style: none;
+}
+
+
+.privacy a:hover { background-color: #990000}
+
+
+#copyright span,#copyright span a{
+    letter-spacing:1px;
+    font:"Times New Roman", Times, serif;
+	font-size:15px;
+    color:white;
+    text-decoration:none;
+}
+
+
+#header{    
+    padding-left:0em;  
+   
+}
+
+
+#logo{        
+    padding-right:0em;    
+	float:left;
+	margin:45 0 0 40;
+	_margin:45 0 0 20;
+
+}
+
+
+.cleaner { clear: both; width: 100%; height: 0px; font-size: 0px;  }
+
+#menu{        
+    padding:0em;
+	float:right;
+	
+}
+
+
+#middletext{
+	margin-top:120px;	
+}
+
+
+#aboutus{
+	margin:40 0 10 -163;	
+    _padding-top:10;
+	width:300px;
+	text-align:left;	
+	float:left;	
+}
+
+
+#news{
+	 margin:40 40 10 0;
+	_padding-top:10;
+	width:300px;
+	text-align:left;	
+	float:right;
+
+}
+
+#testimonial{
+   
+   margin:20 40 10 0;
+   _margin:0 22 10 0;	
+	width:592px;
+	text-align:left;
+   	float:right;
+	
+}
+
+
+#aboutus_home{
+   
+    margin:20 0 10 -163;	   
+	width:650px;
+	text-align:left;
+   	float:left;
+	
+}
+
+#services_home{
+   
+    margin:40 0 10 -163;	   
+	width:300px;
+	text-align:left;
+   	float:left;
+	
+}
+
+#services_list{
+	 margin:40 40 10 0;
+	_padding-top:10;
+	width:300px;
+	text-align:left;	
+	float:right;
+
+}
+
+
+#news p, #aboutus p , #testimonial p , #aboutus p , #services_home p{
+	font-size:0.8em;
+	color:#630c02; 
+	letter-spacing:1px;
+	font:Helvetica,Arial, sans-serif;
+	margin:8 0 5 0;
+	
+
+}
+
+#news h2, #aboutus h2 {
+  font-size:1.2em;color:#f47b20;letter-spacing:2px
+}
+
+#news h3 {
+  font-size:1.2em;color:#FDBB30;letter-spacing:2px
+}
+
+

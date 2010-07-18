@@ -1,0 +1,140 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+   <title>Solara communications : file sharing</title>     
+   <link href="css/solarastylehome.css" rel="stylesheet" type="text/css" media="screen"> 
+      <link href="css/lightbox.css" rel="stylesheet" type="text/css" media="screen">  
+
+   <script type="text/javascript" src="js/mootools.js"></script>
+	<script type="text/javascript" src="js/slideshow.js"></script>
+	<script type="text/javascript" src="js/lightbox.js"></script>
+	
+	<script type="text/javascript">		
+	//<![CDATA[
+	  window.addEvent('domready', function(){
+	    var data = {
+	      '1.jpg': { caption: 'Volcano Asención in Ometepe, Nicaragua.' }, 
+	      '2.jpg': { caption: 'A Ceibu tree.' }, 
+	      '3.jpg': { caption: 'The view from Volcano Maderas.' }, 
+	      '4.jpg': { caption: 'Beer and ice cream.' }
+	    };
+	    var myShow = new Slideshow('show', data, {mode:'rand' , controller: false, height: 172,linked: false,delay: 5000, hu: 'images/', thumbnails: false, width: 1030});
+	  });
+	  
+
+	//]]>
+	
+	
+	function changeimage(imgName){
+	
+	    document.getElementById("Image-Maps_5201007141517415").src=imgName;
+	
+	}
+	</script>
+
+</head>
+<body >
+<center>
+<div id="content" >
+
+<div class="Container">
+
+		<div id="header" >
+			<div id="logo">
+			   <a href="#"><img src="images/logo_home.png" title="www.solaracommunications.com" style="border-style: none" ></a>
+			</div>
+			
+			<div id="menu" >
+		
+				  <img id="Image-Maps_5201007141517415" src="images/menu.PNG" usemap="#Image-Maps_5201007141517415" border="0" width="293" height="278" alt="" />
+					<map id="_Image-Maps_5201007141517415" name="Image-Maps_5201007141517415">
+						<area shape="rect" coords="191,12,241,50" href="aboutus.html"  alt="aboutus" title="aboutus"  
+												onmouseover="javascript:changeimage('images/menu_aboutus.PNG')" 
+												onMouseOut="javascript:changeimage('images/menu.PNG')"  />
+						<area shape="rect" coords="65,34,132,96" href="contactus.html" alt="contactus" title="contactus"   
+												onmouseover="javascript:changeimage('images/menu_contact.PNG')" 
+												onMouseOut="javascript:changeimage('images/menu.PNG')"  />
+						<area shape="rect" coords="68,168,114,202" href="client.html" alt="clients" title="clients"     
+												onmouseover="javascript:changeimage('images/menu_client.PNG')" 
+												onMouseOut="javascript:changeimage('images/menu.PNG')"  />
+						<area shape="rect" coords="179,192,242,226" href="services.html" alt="services" title="services"    
+												onmouseover="javascript:changeimage('images/menu_services.PNG')" 
+												onMouseOut="javascript:changeimage('images/menu.PNG')"  />
+						<area shape="rect" coords="291,276,293,278" href="index.php?aff=mapped_users_5201007141517415" title="Image Map" />
+					</map>
+			</div>
+			
+		</div>
+	
+	
+	
+		<div id="middletext">	
+			<div id="aboutus_home">
+			
+			<!--h2>About Solara</h2-->
+			<img src="images/About_Heading.png" />
+			<p>
+			 Solara Communications. Working for you.Solara Communications is a full service, marketing
+company that works with you from conception to execution but we don’t stop there. Unlike
+the rest, we review and analyze to ensure communications with your customers is ongoing
+and relationships are nurtured.Bringing experience from working with top national brands to
+small businesses, we believe that brilliant marketing campaigns are not limited to six-figure
+marketing budgets. </p><p>We offer competitive rates and unparalleled service that have clients
+raving about. With a commitment to excellence, integrity in our work and specialized market
+expertise, let Solara Communications be your marketing source.There is only one mission
+statement at Solara Communications…we’re not happy until you are.
+			</p>
+			
+			</div>	
+		
+			
+			
+		
+		</div>
+
+</div>
+
+
+<div id="banner"> 
+   <div id="show" class="slideshow">
+    <img src="images/1.jpg" alt="Volcano Asención in Ometepe, Nicaragua." />
+  </div>
+</div>	
+	
+	
+
+		
+<div id="footer">
+	    	<div id="footer_inner">
+				<!--div id="copyright" style="float:left">
+    				<span>Copyright @ Solara Communications</span>
+				</div>
+
+				<div id="copyright" style="float:right">
+					<span style="">647.831.5400 | <a href="javascript:sendmail('info@solaracommunications.com')">
+					info@solaracommunications.com </a></span>
+				</div!-->
+				<table width="100%"  cellpadding="0" cellspacing="0">
+				<tr  height="45">
+					<td width="289" height="45" align="right" ><img src="images/footer_Part1.png" ></td>
+					<td width="118" align="left" ><a href="privacy.html">
+						<img src="images/footer_part2.png" onmouseover="this.src='images/footer_part2_mouseover.png'" 
+														   onMouseOut="this.src='images/footer_part2.png'"></a></td>
+					<td width="164">&nbsp;</td>
+					<td width="115" align="right"><img src="images/footer_part3.png" ></td>
+					<td width="256" align="left"><a href="mailus.html">
+						<img src="images/footer_part4.png" onmouseover="this.src='images/footer_part4_mouseover.png'" 
+														   onMouseOut="this.src='images/footer_part4.png'"></a></td>
+					<td width="30" align="left"><a href="#"><img src="images/footer_part5_facebook.png" ></a></td>
+					<td width="54" align="left" ><a href="#"><img src="images/footer_part6_twitter.png" ></a></td>
+				</tr>
+				
+				</table>
+			</div>
+</div>	
+	
+</div>
+</center>
+</body>
+</html>

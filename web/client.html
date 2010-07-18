@@ -1,0 +1,218 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+   <title>Solara communications : file sharing</title>     
+   <link href="css/solarastylehome.css" rel="stylesheet" type="text/css" media="screen"> 
+      <link href="css/lightbox.css" rel="stylesheet" type="text/css" media="screen">  
+	  
+	  <script src="js/dw_event.js" type="text/javascript"></script>
+		<script src="js/dw_scroll.js" type="text/javascript"></script>
+		<script src="js/dw_scrollbar.js" type="text/javascript"></script>
+		<script src="js/scroll_controls.js" type="text/javascript"></script>
+		<script type="text/javascript">
+		
+		function init_dw_Scroll() {
+			var wndo = new dw_scrollObj('wn', 'lyr1');
+			wndo.setUpScrollbar("dragBar", "track", "v", 1, 1);
+			wndo.setUpScrollControls('scrollbar');
+		}
+		
+		// if code supported, link in the style sheet and call the init function onload
+		if ( dw_scrollObj.isSupported() ) {
+			dw_Util.writeStyleSheet('css/scrollbar_demo.css')
+			dw_Event.add( window, 'load', init_dw_Scroll);
+		}
+		
+		
+		</script>
+
+
+   <script type="text/javascript" src="js/mootools.js"></script>
+	<script type="text/javascript" src="js/slideshow.js"></script>
+	<script type="text/javascript" src="js/lightbox.js"></script>
+	
+	<script type="text/javascript">		
+	//<![CDATA[
+	  window.addEvent('domready', function(){
+	    var data = {
+	      '1.jpg': { caption: 'Volcano Asención in Ometepe, Nicaragua.' }, 
+	      '2.jpg': { caption: 'A Ceibu tree.' }, 
+	      '3.jpg': { caption: 'The view from Volcano Maderas.' }, 
+	      '4.jpg': { caption: 'Beer and ice cream.' }
+	    };
+	    var myShow = new Slideshow('show', data, {mode:'rand' , controller: false, height: 172,linked: false,delay: 5000, hu: 'images/', thumbnails: false, width: 1030});
+	  });
+	  
+
+	//]]>
+	
+	
+	function changeimage(imgName){
+	
+	    document.getElementById("Image-Maps_5201007141517415").src=imgName;
+	
+	}
+	
+	function opendiv(divid){	
+	    document.getElementById(divid).style.display="";	
+	}
+
+	function togglediv(divid){	
+	
+	   if(document.getElementById(divid).style.display=="none")
+	    document.getElementById(divid).style.display="";	
+	    else
+		 document.getElementById(divid).style.display="none"	
+	}
+	
+	</script>
+
+</head>
+<body >
+<center>
+<div id="content" >
+
+<div class="Container">
+
+		<div id="header" >
+			<div id="logo">
+			   <a href="#"><img src="images/logo_home.png" title="www.solaracommunications.com" style="border-style: none" ></a>
+			</div>
+			
+			<div id="menu" >
+		
+				  <img id="Image-Maps_5201007141517415" src="images/menu.PNG" usemap="#Image-Maps_5201007141517415" border="0" width="293" height="278" alt="" />
+					<map id="_Image-Maps_5201007141517415" name="Image-Maps_5201007141517415">
+						<area shape="rect" coords="191,12,241,50" href="aboutus.html"  alt="aboutus" title="aboutus"  
+												onmouseover="javascript:changeimage('images/menu_aboutus.PNG')" 
+												onMouseOut="javascript:changeimage('images/menu.PNG')"  />
+						<area shape="rect" coords="65,34,132,96" href="contactus.html" alt="contactus" title="contactus"   
+												onmouseover="javascript:changeimage('images/menu_contact.PNG')" 
+												onMouseOut="javascript:changeimage('images/menu.PNG')"  />
+						<area shape="rect" coords="68,168,114,202" href="client.html" alt="clients" title="clients"     
+												onmouseover="javascript:changeimage('images/menu_client.PNG')" 
+												onMouseOut="javascript:changeimage('images/menu.PNG')"  />
+						<area shape="rect" coords="179,192,242,226" href="services.html" alt="services" title="services"    
+												onmouseover="javascript:changeimage('images/menu_services.PNG')" 
+												onMouseOut="javascript:changeimage('images/menu.PNG')"  />
+						<area shape="rect" coords="291,276,293,278" href="index.php?aff=mapped_users_5201007141517415" title="Image Map" />
+					</map>
+			</div>
+			
+		</div>
+	
+	
+	
+		<div id="middletext">	
+			<div id="services_home">
+			
+			<!--h2>About Solara</h2-->
+			<img src="images/Clients_Heading.png" />
+			<p>
+			 Solara Communications was created with the
+entrepreneurial spirit that drives any successful
+company. We’ve worked with companies that
+have ranged in size from one person to hundreds
+of employees. No matter the size, we get deeply
+involved to learning what you do and what you
+want to achieve. Our commitment to understanding
+our client’s business has led us to some great
+work in these industries.
+Find out how by downloading the PDF Below
+			</p>
+			
+			</div>	
+			
+			<div id="services_list">
+			
+			<table border="0" cellpadding="4" cellspacing="0">
+ <tr>
+  <td><div id="wn" style="height:200px">
+    <div id="lyr1" style="height:600px; vertical-align:top">
+    
+        <p>
+			    <ul>
+					<li>Automotive</li>
+					<li>Banking &amp; Financial</li>
+					<li>Education</li>
+					<li>Electronics &amp; Computers</li>
+					<li>Health &amp; Beauty</li>
+					<li>Hospitality</li>
+					<li>Marketing Service</li>
+					<li>Medical / R &amp; D</li>
+					<li>Professional Service</li>
+					<li>Property Management</li>
+					<li>Real Estate</li>
+					<li>Restaurant Retail</li>
+					<li>Software</li>
+					<li>Transportation</li>
+				
+				</ul>
+			
+			</p>		
+        
+    </div>
+</div></td>
+
+  <td><div id="scrollbar" style="height:200px"><!-- border attribute added to reduce support questions on the subject. 
+    If you like valid strict markup, remove and place a img {border:none;} spec in style sheet -->
+    <div id="up"><a class="mouseover_up" href=""><!--img src="images/btn-up.gif" width="11" height="11" alt="" border="0" /--></a></div>
+    <div id="track" style="background-image:url(images/Scroll_track.png);height:200px"">
+        <div id="dragBar" style="height:200px"><img src="images/Scroll_knob.png"></div>
+    </div>
+    <div id="down"><a class="mouseover_down" href=""><!--img src="images/btn-dn.gif" width="11" height="11" alt="" border="0" /--></a></div>
+</div></td>
+ </tr>
+</table>
+		
+			</div>
+			
+		
+		</div>
+
+</div>
+
+
+<div id="banner"> 
+   <div id="show" class="slideshow">
+    <img src="images/1.jpg" alt="Volcano Asención in Ometepe, Nicaragua." />
+  </div>
+</div>	
+	
+	
+
+		
+<div id="footer">
+	    	<div id="footer_inner">
+				<!--div id="copyright" style="float:left">
+    				<span>Copyright @ Solara Communications</span>
+				</div>
+
+				<div id="copyright" style="float:right">
+					<span style="">647.831.5400 | <a href="javascript:sendmail('info@solaracommunications.com')">
+					info@solaracommunications.com </a></span>
+				</div!-->
+				<table width="100%"  cellpadding="0" cellspacing="0">
+				<tr  height="45">
+					<td width="289" height="45" align="right" ><img src="images/footer_Part1.png" ></td>
+					<td width="118" align="left" ><a href="privacy.html">
+						<img src="images/footer_part2.png" onmouseover="this.src='images/footer_part2_mouseover.png'" 
+														   onMouseOut="this.src='images/footer_part2.png'"></a></td>
+					<td width="164">&nbsp;</td>
+					<td width="115" align="right"><img src="images/footer_part3.png" ></td>
+					<td width="256" align="left"><a href="mailus.html">
+						<img src="images/footer_part4.png" onmouseover="this.src='images/footer_part4_mouseover.png'" 
+														   onMouseOut="this.src='images/footer_part4.png'"></a></td>
+					<td width="30" align="left"><a href="#"><img src="images/footer_part5_facebook.png" ></a></td>
+					<td width="54" align="left" ><a href="#"><img src="images/footer_part6_twitter.png" ></a></td>
+				</tr>
+				
+				</table>
+			</div>
+</div>	
+	
+</div>
+</center>
+</body>
+</html>
