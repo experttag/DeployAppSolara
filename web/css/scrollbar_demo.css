@@ -18,14 +18,14 @@ div#track {
   position:absolute; 
   left:2; 
   top:1px;
-  width:3px; 
+  width:10px; 
   height:110px;  
     
   }
 div#dragBar {
   position:absolute; left:1px; top:1px;
   height:1px;
-  background-image:url(images/Scroll_knob.png)
+ 
   }  
 div#up { position:absolute; left:0; top:0; }  
 div#down { position:absolute; left:0; bottom:0; }
@@ -41,4 +41,7 @@ div#scrollbar, div#track, div#dragBar, div#up, div#down {
 font-size:1px in scrollbar has same effect (less likely to be removed, resulting in support issues) */
 div#scrollbar img {
     display:block; 
+	height:8px;
+	width:8px;
+		
     } 

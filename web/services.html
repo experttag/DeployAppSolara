@@ -26,6 +26,8 @@
 		
 		
 		</script>
+		
+		<style type="text/css">img, div, a { behavior: url(iepngfix.htc) }</style>
 
 
    <script type="text/javascript" src="js/mootools.js"></script>
@@ -41,7 +43,7 @@
 	      '3.jpg': { caption: 'The view from Volcano Maderas.' }, 
 	      '4.jpg': { caption: 'Beer and ice cream.' }
 	    };
-	    var myShow = new Slideshow('show', data, {mode:'rand' , controller: false, height: 172,linked: false,delay: 5000, hu: 'images/', thumbnails: false, width: 1030});
+	    var myShow = new Slideshow('show', data, {mode:'rand' , controller: false, height: 172,linked: false,delay: 5000, hu: 'images/', thumbnails: false, width: 1002});
 	  });
 	  
 
@@ -132,26 +134,26 @@ us to discuss your specific requirements
     <div id="lyr1" style="height:600px; vertical-align:top">
     
         <p>
-			    <ul>
-					<li>Media</li>
-					<li>Analytics</li>
-					<li>Branding</li>
-					<li>Marketing</li>
-					<li>Advertising</li>
-					<li style="cursor:pointer" onMouseOver="javascript:opendiv('Photography')" onClick="javascript:togglediv('Photography')">Photography </li>
+			    <ul class="homelist" >
+					<li><a href="#">Media</a></li>
+					<li><a href="#">Analytics</a></li>
+					<li><a href="#">Branding</a></li>
+					<li><a href="#">Marketing</a></li>
+					<li><a href="#">Advertising</a></li>
+					<li style="cursor:pointer;" onClick="javascript:togglediv('Photography')"><a href="#">Photography </a></li>
 					<div id="Photography" style="display:none">
 					<ul>
-						<li>Editing & Retouching</li>
-						<li>Image Sourcing</li>
-						<li>Custom Photography</li>
-						<li>Location Scouting</li>
-						<li>Talent / Casting</li>
+						<li><a href="#">Editing & Retouching</a></li>
+						<li><a href="#">Image Sourcing</a></li>
+						<li><a href="#">Custom Photography</a></li>
+						<li><a href="#">Location Scouting</a></li>
+						<li><a href="#">Talent / Casting</a></li>
 					</ul>	
 					</div>
-					<li>Public Relations</li>
-					<li>Motion Graphics</li>
-					<li>Online Marketing</li>
-					<li>Video Production</li>
+					<li><a href="#">Public Relations</a></li>
+					<li><a href="#">Motion Graphics</a></li>
+					<li><a href="#">Online Marketing</a></li>
+					<li><a href="#">Video Production</a></li>
 				
 				</ul>
 			
@@ -163,7 +165,7 @@ us to discuss your specific requirements
   <td><div id="scrollbar" style="height:200px"><!-- border attribute added to reduce support questions on the subject. 
     If you like valid strict markup, remove and place a img {border:none;} spec in style sheet -->
     <div id="up"><a class="mouseover_up" href=""><!--img src="images/btn-up.gif" width="11" height="11" alt="" border="0" /--></a></div>
-    <div id="track" style="background-image:url(images/Scroll_track.png);height:200px"">
+    <div id="track" style="background-image:url(images/Scroll_track.png);height:200px;background-repeat:no-repeat ;"">
         <div id="dragBar" style="height:200px"><img src="images/Scroll_knob.png"></div>
     </div>
     <div id="down"><a class="mouseover_down" href=""><!--img src="images/btn-dn.gif" width="11" height="11" alt="" border="0" /--></a></div>
@@ -202,12 +204,12 @@ us to discuss your specific requirements
 				<tr  height="45">
 					<td width="289" height="45" align="right" ><img src="images/footer_Part1.png" ></td>
 					<td width="118" align="left" ><a href="privacy.html">
-						<img src="images/footer_part2.png" onmouseover="this.src='images/footer_part2_mouseover.png'" 
+						<img src="images/footer_part2.png" onMouseOver="this.src='images/footer_part2_mouseover.png'" 
 														   onMouseOut="this.src='images/footer_part2.png'"></a></td>
 					<td width="164">&nbsp;</td>
 					<td width="115" align="right"><img src="images/footer_part3.png" ></td>
 					<td width="256" align="left"><a href="mailus.html">
-						<img src="images/footer_part4.png" onmouseover="this.src='images/footer_part4_mouseover.png'" 
+						<img src="images/footer_part4.png" onMouseOver="this.src='images/footer_part4_mouseover.png'" 
 														   onMouseOut="this.src='images/footer_part4.png'"></a></td>
 					<td width="30" align="left"><a href="#"><img src="images/footer_part5_facebook.png" ></a></td>
 					<td width="54" align="left" ><a href="#"><img src="images/footer_part6_twitter.png" ></a></td>
