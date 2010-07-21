@@ -33,6 +33,149 @@
 	    document.getElementById("Image-Maps_5201007141517415").src=imgName;
 	
 	}
+	
+	
+	function submitForm(){
+	
+		if(validateForm()){
+		document.contactfrm.submit();
+		alert("your mail sent successfully, \n our customer executive will contact you shortly"); 
+		}
+	}
+	
+	function validateForm(){
+	
+			var error="";
+			errorcolor = "Yellow";
+			normalcolor = "white";
+		   
+		   error=error+ isValidUsername("contactfrm","customername",errorcolor,normalcolor);
+		   error=error+ isValidUsername("contactfrm","companyname",errorcolor,normalcolor);
+		   error=error+ isSpecialCharacters("contactfrm","companywebsite",errorcolor,normalcolor);		   
+		   error=error+ isValidPhone("contactfrm","telephone",errorcolor,normalcolor);		   
+		   error=error+ isValidEmail("contactfrm","email",errorcolor,normalcolor);		   
+		   error=error+ isSpecialCharacters("contactfrm","services",errorcolor,normalcolor);		   
+		   error=error+ isSpecialCharacters("contactfrm","enquiry",errorcolor,normalcolor);		   
+		   //error= isValidPhone(form_id,email,errorcolor,normalcolor);
+		   
+		   if((error!="")) {
+			  alert(error);	  
+			  return false;
+		   }
+		   
+		   return true;
+	}
+	
+//function to trim spaces from string
+function trim(s){
+  return s.replace(/^\s+|\s+$/, '');
+}
+	
+	
+//function to check if email address is valid or not and return error
+function isValidEmail(form_id,email,errorcolor,normalcolor) {
+    var error="";
+	var fld = document.forms[form_id].elements[email];
+    var tfld = trim(fld.value);                        // value of field with whitespace trimmed off
+    var emailFilter = /^[^@]+@[^@.]+\.[^@]*\w\w$/ ;
+    var illegalChars= /[\(\)\<\>\,\;\:\$\#\\\"\[\]]/ ;
+   
+    if (fld.value == "") {
+        fld.style.background = errorcolor;
+        error = "You didn't enter an email address.\n";
+		fld.focus();  
+    } else if (!emailFilter.test(tfld)) {              //test email for illegal characters
+        fld.style.background = errorcolor;
+        error = "Please enter a valid email address.\n";
+		fld.focus();  
+    } else if (fld.value.match(illegalChars)) {
+        fld.style.background = errorcolor;
+        error = "The email address contains illegal characters.\n";
+		fld.focus();  
+    } else {
+        fld.style.background = normalcolor;
+    }
+    return error;
+}
+	
+//function to check if username is valid or not and return error
+function isValidUsername(form_id,username,errorcolor,normalcolor) {
+    var error = "";
+    var illegalChars = /\W/; // allow letters, numbers, and underscores
+	var fld = document.forms[form_id].elements[username];
+	  
+    if (fld.value == "") {
+        fld.style.background = errorcolor; 
+        error = "You didn't enter a " + username + ".\n";
+		fld.focus(); 
+    } else if ((fld.value.length < 3) || (fld.value.length > 50)) {
+        fld.style.background = errorcolor; 
+        error = "The " + username + " is the wrong length. It must be 4 to 50 characters long \n";
+		fld.focus(); 
+    } else if (illegalChars.test(fld.value)) {
+        fld.style.background = errorcolor; 
+        error = "The " + username + "contains illegal characters. It must contain only letters and numbers and underscores\n";
+		fld.focus(); 
+    } else {
+        fld.style.background = normalcolor;
+    }
+	
+    return error;
+}
+
+
+//function to check if field contans special characters  or not and return error
+function isSpecialCharacters(form_id,username,errorcolor,normalcolor){
+	var error="";
+	var fld = document.forms[form_id].elements[username];
+    	                       // value of field with whitespace trimmed off   
+    var illegalChars= /[\(\)\<\>\,\;\:\$\#\\\"\[\]]/ ;
+   
+    if (fld.value == "") {
+        fld.style.background = errorcolor;
+        error = "You didn't enter " + username + ".\n";
+		fld.style.background = errorcolor;
+		fld.focus();  
+    }else if (fld.value.match(illegalChars)) {
+        fld.style.background = errorcolor;
+        error = "The " + username + " contains illegal characters.\n";
+		fld.focus();  
+    } else {
+	    fld.style.background = normalcolor;
+    }
+    return error;
+}
+
+
+//function to check if phone number is valid or not and return error
+function isValidPhone(form_id,phone,errorcolor,normalcolor) {    	
+	var error="";
+	var fld = document.forms[form_id].elements[phone];
+	var stripped = fld.value.replace(/[\(\)\.\-\ ]/g, '');
+	    
+   if (fld.value == "") {
+        error = "You didn't enter a "+ phone + " number.\n";
+        fld.style.background = errorcolor;
+		fld.focus();  
+    } else if (isNaN(parseInt(stripped))) {
+        error = "The "+ phone + " number contains illegal characters.\n";
+        fld.style.background = errorcolor;
+		fld.focus(); 
+    } else if ((stripped.length < 10)) {
+        error = "The "+ phone + " number is too short. Make sure you included an area code.\n";
+        fld.style.background = errorcolor;
+		fld.focus(); 
+    }else if ((stripped.length > 12)) {
+        error = "The "+ phone + " number is too long. \n";
+        fld.style.background = errorcolor;
+		fld.focus(); 
+    }
+	else
+	fld.style.background = normalcolor;
+	  
+    return error;
+}
+	
 	</script>
 
 </head>
@@ -73,7 +216,7 @@
 	
 		<div id="middletext">	
 			<div id="contactus_home">
-			
+			<form id="contactfrm" name="contactfrm" method="post" >
 			
 			 <div id="contact_left" >
 			 <img src="images/Contact_Heading.png" style="margin-bottom:20"/>
@@ -95,23 +238,23 @@
 					</tr>
 				  <tr>
 					<td>Name*</td>
-					<td><input type="text" class="inputtext"></td>
+					<td><input type="text" class="inputtext" id="customername" name="customername"></td>
 				  </tr>
 				  <tr>
 					<td>Company Name*</td>
-					<td><input type="text" class="inputtext"></td>
+					<td><input type="text" class="inputtext" id="companyname" name="companyname"></td>
 				  </tr>
 				  <tr>
 					<td>Company Website</td>
-					<td><input type="text" class="inputtext"></td>
+					<td><input type="text" class="inputtext" id="companywebsite" name="companywebsite"></td>
 				  </tr>
 				  <tr>
 					<td>Telephone*</td>
-					<td><input type="text" class="inputtext"></td>
+					<td><input type="text" class="inputtext" id="telephone" name="telephone"></td>
 				  </tr>
 				  <tr>
 					<td>Email*</td>
-					<td><input type="text" class="inputtext"></td>
+					<td><input type="text" class="inputtext" id="email" name="email"></td>
 				  </tr>
 				   <tr>
 					<td colspan="2" style="color:#630c02; ">&nbsp;</td>
@@ -131,14 +274,14 @@
                     <td>What services are you interested in?</td>
                   </tr>
                   <tr>
-                    <td><input name="text" type="text" class="inputtext" style="width:230;margin-bottom:15;"></td>
+                    <td><input name="text" type="text" id="services" name="services" class="inputtext" style="width:230;margin-bottom:15;"></td>
                   </tr>
                   <tr>
                     <td>How did you find us? Please specify</td>
                   </tr>
                   <tr>
                     <td style="color:#630c02; ">
-                      <input name="radiobutton" type="radio" value="radiobutton">
+                      <input name="radiobutton"  type="radio" value="radiobutton">
                     Internet Search Engine</td>
                   </tr>
                   <tr>
@@ -161,15 +304,19 @@
                   </tr>
                   <tr>
                     <td><label>
-                      <textarea name="textarea" style="width:230;height:50 "></textarea>
+                      <textarea name="textarea" style="width:230;height:50;" id="enquiry" name="enquiry"></textarea>
                     </label></td>
                   </tr>
                   <tr>
-                    <td align="right" ><img src="images/Contact_Submit_Button.png" id="contact_submit_img"></td>
+                    <td align="right" ><img  src="images/Contact_Submit_Button.png" id="contact_submit_img" onClick="javascript:submitForm()">
+
+					</td>
                   </tr>
                   
                 </table>
 			  </div>
+			  
+			  </form>
 			
 			</div>	
 		
