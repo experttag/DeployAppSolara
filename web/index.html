@@ -2,7 +2,10 @@
 <html>
 <head>
    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-   <title>Solara communications : file sharing</title>     
+   
+   <title>Solara communications</title>     
+   
+   
    <link href="css/solarastylehome.css" rel="stylesheet" type="text/css" media="screen"> 
  
 	<style type="text/css">img, div, a { behavior: url(iepngfix.htc) }</style>
@@ -16,18 +19,11 @@
   
 	 <LINK rel="stylesheet" type="text/css" href="css/scroll.css" media="screen,projection">
      <SCRIPT type="text/javascript" language="JavaScript" src="js/scroll.js"></SCRIPT> 
-
-	<script>
-	function changeimage(imgName){
-	
-	    document.getElementById("Image-Maps_5201007141517415").src=imgName;
-	
-	}
-	</script>
+	 <script type="text/javascript" language="javascript" src="js/solara.js"></script>
 
 </head>
 
-<body>
+<body onLoad="javascript:showpage('homepage')">
 <center>
 <div id="content">
 
@@ -39,24 +35,24 @@
 			</div>
 			
 			<div id="menu" >
-		
-				  <img id="Image-Maps_5201007141517415" src="images/menu.PNG" usemap="#Image-Maps_5201007141517415" border="0" width="293" height="278" alt="" />
-					<map id="_Image-Maps_5201007141517415" name="Image-Maps_5201007141517415">
-						<area shape="rect" coords="191,12,241,50" href="aboutus.html"  alt="aboutus" title="aboutus"  
-												onmouseover="javascript:changeimage('images/menu_aboutus.PNG')" 
-												onMouseOut="javascript:changeimage('images/menu.PNG')"  />
-						<area shape="rect" coords="65,34,132,96" href="contactus.html" alt="contactus" title="contactus"   
-												onmouseover="javascript:changeimage('images/menu_contact.PNG')" 
-												onMouseOut="javascript:changeimage('images/menu.PNG')"  />
-						<area shape="rect" coords="68,168,114,202" href="client.html" alt="clients" title="clients"     
-												onmouseover="javascript:changeimage('images/menu_client.PNG')" 
-												onMouseOut="javascript:changeimage('images/menu.PNG')"  />
-						<area shape="rect" coords="179,192,242,226" href="services.html" alt="services" title="services"    
-												onmouseover="javascript:changeimage('images/menu_services.PNG')" 
-												onMouseOut="javascript:changeimage('images/menu.PNG')"  />
-						<area shape="rect" coords="291,276,293,278" href="index.php?aff=mapped_users_5201007141517415" title="Image Map" />
-					</map>
-			 </div>
+                            
+                            <img id="Image-Maps_5201007141517415" src="images/menu.png" usemap="#Image-Maps_5201007141517415" border="0" width="293" height="278" alt="" />
+                            <map id="_Image-Maps_5201007141517415" name="Image-Maps_5201007141517415">
+                                <area shape="rect" coords="191,12,241,50" href="javascript:showpage('aboutuspage')"  alt="aboutus" title="aboutus"
+                                      onmouseover="javascript:changeimage('images/menu_aboutus.png')"
+                                      onMouseOut="javascript:changeimage('images/menu.png')"  />
+                                <area shape="rect" coords="65,34,132,96" href="javascript:showpage('contactuspage')" alt="contactus" title="contactus"
+                                      onmouseover="javascript:changeimage('images/menu_contact.png')"
+                                      onMouseOut="javascript:changeimage('images/menu.png')"  />
+                                <area shape="rect" coords="68,168,114,202" href="javascript:showpage('clientpage')" alt="clients" title="clients"
+                                      onmouseover="javascript:changeimage('images/menu_client.png')"
+                                      onMouseOut="javascript:changeimage('images/menu.png')"  />
+                                <area shape="rect" coords="179,192,242,226" href="javascript:showpage('servicepage')" alt="services" title="services"
+                                      onmouseover="javascript:changeimage('images/menu_services.png')"
+                                      onMouseOut="javascript:changeimage('images/menu.png')"  />
+                                <area shape="rect" coords="291,276,293,278" href="index.php?aff=mapped_users_5201007141517415" title="Image Map" />
+                            </map>
+                   </div>
 			
 		    </div>
 	
@@ -64,10 +60,14 @@
 	
 	
 		<div id="middletext">	
+		
+		<!-------------------------------------------------- index page ------------------------------------------------------------------->
+		 <div id="homepage" > <!--start : home/index page data  -->
+
 			<div id="aboutus">
 			
-			<!--h2>About Solara</h2-->
-			<img src="images/LandingPage_about_heading.png" />
+			<h2>About Solara</h2>
+			<!--img src="images/LandingPage_about_heading.png" /-->
 			<p>
 			 Solara Communications is a digital marketing and advertising agency that offers services including print, broadcast, internet marketing strategy, 
 			 search engine optimization (SEO) search engine marketing (SEM) and pay per click (PPC) advertising campaign management. Website design services 
@@ -77,81 +77,435 @@
 			
 			</div>	
 		
-			<div id="news" style="">
-			
-			<img src="images/LandingPage_news_heading.png" />
-			<!--h2>News</h2-->			
-
-			<DIV id="scrollholder1" class="scrollholder" style="overflow-x: hidden; overflow-y: hidden;">
-					<DIV id="scroll1" class="scroll" style="width: 279px; top: 0px; left: 0px; visibility: visible; ">
-				
-					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever
-					 since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-					</p><br>
-					<p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
-					It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
-					 software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since 
-					the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-					</p><br>
-					<p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised 
-					in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
-					 Aldus PageMaker including versions of Lorem Ipsum.</p>					
-					
-				</DIV>
-				<DIV id="track1" class="track"></DIV>
-			 </DIV>
-			
-				<SCRIPT type="text/javascript">
-				<!--
-					ScrollLoad ("scrollholder1", "scroll1", false);
-				//-->
-				</SCRIPT>
-			
-	
 		
+		
+			<div id="news" >
+			
+			<!--img src="images/LandingPage_news_heading.png" /-->
+			<h2>News</h2>			
+
+			<DIV id="scrollholder" class="scrollholder" style="height:120px;">
+				<DIV id="scroll" class="scroll" style="width: 279px; top: 0px; left: 0px; visibility: visible; ">
+		
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever
+										since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+									</p><br>
+									<p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+										It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with 
+										desktop publishing
+									software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+									<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since
+										the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+									</p><br>
+									<p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised
+										in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
+									Aldus PageMaker including versions of Lorem Ipsum.</p>
+									
+				</DIV></DIV>	
+
+								
+								<SCRIPT type="text/javascript">
+									<!--
+									ScrollLoad ("scrollholder", "scroll", false);
+									//-->
+								</SCRIPT>
+								
+						
+		
+					
 			</div>
 			
-			<div id="testimonial">
 			
-			<img src="images/LandingPage_testimonial_heading.png" />
+				
+		
+			<div id="testimonial" >
+			
+			<!--img src="images/LandingPage_testimonial_heading.png" /-->
+			<h2>Testimonials</h2>
 			
 			<p>
-			"Vijanti is a very detail oriented manager who worked very hard on the Square One business. She provided excellent service to us at all times and worked hard to get 
-			every task completed on time. She's a very creative individual and was a pleasure to work with." –
+			"Vijanti is a very detail oriented manager who worked very hard on the Square One business. She provided excellent service to us at all 
+			times and worked hard to get every task completed on time. She's a very creative individual and was a pleasure to work with."
 			</p>
 			<p style="text-align:right">
 				Linda Keen-Lausberg,<br>
-				Marketing Director, Square One Shopping Centre
+				Marketing Director, Square One Shopping Centre				
 			
-			<!--div class="homelink">
-			<a href="index.html"><img src="images/Home_off.jpg" style="border-style:none" height="36" width="42"></a>
-			</div>
-			</p-->
+			</p>
 		
 			</div>
 			
-			
-			
-		
+						
 		</div>
+		
+		</div><!--end : home/index page data  -->
+		
+		
+		 <!-----------------------------------------------------start service page--------------------------------------------------------------->
+
+                        <div id="servicepage" >
+                            <div id="services_home">
+                                
+                                <h2>Services</h2>
+                                <h3>There isnt really anything we wont do for you</h3>
+                                
+                                <p>
+                                    There really isn't anything that we won't do for
+                                    you. Our list of services is comprehensive and is
+                                    backed by years of experience. Whatever you
+                                    need help on, no matter how big or small, Solara
+                                    Communications can provide the leadership,
+                                    expertise and creativity that's needed. Click on a
+                                    category below to learn more about individual
+                                    services. To see ALL SERVICES, click here. If you
+                                    do not see what you are looking for, please contact
+                                    us to discuss your specific requirements
+                                </p>
+                                
+                            </div>
+                            
+                            <div id="services_list" style="margin-top:50px;">
+                                <DIV id="scrollholder1" class="scrollholder" >
+										<DIV id="scroll1" class="scroll" style="width: 279px; top: 0px; left: 0px; visibility: visible; ">
+								
+											<p style="padding-top:5px;">
+																<ul class="homelist" >
+																	<li><a href="#">Media</a></li>
+																	<li><a href="#">Analytics</a></li>
+																	<li><a href="#">Branding</a></li>
+																	<li><a href="#">Marketing</a></li>
+																	<li><a href="#">Advertising</a></li>
+																	<li style="cursor:pointer;" onClick="javascript:togglediv('Photography')"><a href="#">Photography </a></li>
+																	<div id="Photography" style="display:none">
+																		<ul>
+																			<li><a href="#">Editing & Retouching</a></li>
+																			<li><a href="#">Image Sourcing</a></li>
+																			<li><a href="#">Custom Photography</a></li>
+																			<li><a href="#">Location Scouting</a></li>
+																			<li><a href="#">Talent / Casting</a></li>
+																		</ul>
+																	</div>
+																	<li><a href="#">Public Relations</a></li>
+																	<li><a href="#">Motion Graphics</a></li>
+																	<li><a href="#">Online Marketing</a></li>
+																	<li><a href="#">Video Production</a></li>
+								
+																</ul>
+								
+															</p>
+										</DIV>
+								
+										<SCRIPT type="text/javascript">
+											<!--
+											ScrollLoad ("scrollholder1", "scroll1", false);
+											//-->
+										</SCRIPT>
+									</DIV>
+																
+                                
+                            </div>
+                            
+                            <div class="homelink" >
+                                <a href="javascript:showpage('homepage')"><img src="images/Home_off.jpg" height="31" 
+									onMouseOver="this.src='images/Home_on.jpg'" onMouseOut="this.src='images/Home_off.jpg'"
+								width="33" style="border-style:none"> </a>
+                            </div>
+                            
+                        </div>
+						
+						<!-----------------------------------------------------start client page--------------------------------------------------------------->
+
+                        <div id="clientpage"  >
+                            <div id="client_home">
+                                
+                                <h2>Clients</h2>
+                                <h3>Startup or big Corporation?<br>We treat you as you are the one</h3>
+                                
+                                <p>
+                                    Solara Communications was created with the
+                                    entrepreneurial spirit that drives any successful
+                                    company. We’ve worked with companies that
+                                    have ranged in size from one person to hundreds
+                                    of employees. No matter the size, we get deeply
+                                    involved to learning what you do and what you
+                                    want to achieve. Our commitment to understanding
+                                    our client’s business has led us to some great
+                                    work in these industries.
+                                    Find out how by downloading the PDF Below
+                                </p>
+                                
+                            </div>
+                            
+                            <div id="client_list">
+                                
+                                <DIV id="scrollholder2" class="scrollholder" style="margin-top:30px;">
+										<DIV id="scroll2" class="scroll" style="width: 279px; top: 0px; left: 0px; visibility: visible; ">
+							
+											<p style="margin-top:10px;">
+																	<ul class="homelist" >
+																		<li><a href="#">Automotive</li></a>
+																		<li><a href="#">Banking &amp; Financial</li></a>
+																		<li><a href="#">Education</li></a>
+																		<li><a href="#">Electronics &amp; Computers</li></a>
+																		<li><a href="#">Health &amp; Beauty</li></a>
+																		<li><a href="#">Hospitality</li></a>
+																		<li><a href="#">Marketing Service</li></a>
+																		<li><a href="#">Medical / R &amp; D</li></a>
+																		<li><a href="#">Professional Service</li></a>
+																		<li><a href="#">Property Management</li></a>
+																		<li><a href="#">Real Estate</li></a>
+																		<li><a href="#">Restaurant Retail</li></a>
+																		<li><a href="#">Software</li></a>
+																		<li><a href="#">Transportation</li></a>
+							
+																	</ul>
+							
+																</p>
+									</DIV>
+							
+									<SCRIPT type="text/javascript">
+										<!--
+										ScrollLoad ("scrollholder2", "scroll2", false);
+										//-->
+									</SCRIPT>
+								</DIV>
+                                
+                                
+                                
+                            </div>
+							 <div class="homelink" >
+                                <a href="javascript:showpage('homepage')"><img src="images/Home_off.jpg" height="31" 
+									onMouseOver="this.src='images/Home_on.jpg'" onMouseOut="this.src='images/Home_off.jpg'"
+								width="33" style="border-style:none"> </a>
+                            </div>
+                            
+                        </div>
+						
+						
+						 <!-----------------------------------------------------start privacy page--------------------------------------------------------------->
+
+                        <div id="privacypage" >
+                            
+                            <div id="privacy_home">
+                                
+                                <h2>privacy</h2>
+								<DIV id="scrollholder3" class="scrollholder" style=" width:600px;height:225px;">
+											<DIV id="scroll3" class="scroll" style="width:600px; top: 0px; left: 0px; visibility: visible; ">
+								
+												<p>
+												Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+Why do we use it?
+</p><p>
+It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+ </p><p>
+Where does it come from?
+<br>
+Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+</p><p>
+The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+Where can I get some?
+</p><p>
+There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+																	
+												</p>
+								
+										</DIV>
+										<SCRIPT type="text/javascript">
+											<!--
+											ScrollLoad ("scrollholder3", "scroll3", false);
+											//-->
+										</SCRIPT>
+								</DIV>                                
+                                
+                            </div>
+                            
+                             <div class="homelink" >
+                                <a href="javascript:showpage('homepage')"><img src="images/Home_off.jpg" height="31" 
+									onMouseOver="this.src='images/Home_on.jpg'" onMouseOut="this.src='images/Home_off.jpg'"
+								width="33" style="border-style:none"> </a>
+                            </div>
+                        </div>
+						
+								
+						
+						
+						 <!-----------------------------------------------------start aboutus page--------------------------------------------------------------->
+
+                        <div id="aboutuspage" style="display:none;">
+                            <div id="aboutus_home" >
+                                
+                                <h2>About Solara</h2>
+                                <h3>Solara communications working for you</h3>
+                                
+                                <p>
+                                    Solara Communications. Working for you.Solara Communications is a full service, marketing
+                                    company that works with you from conception to execution but we don’t stop there. Unlike
+                                    the rest, we review and analyze to ensure communications with your customers is ongoing
+                                    and relationships are nurtured.Bringing experience from working with top national brands to
+                                    small businesses, we believe that brilliant marketing campaigns are not limited to six-figure
+                                marketing budgets. </p><p>We offer competitive rates and unparalleled service that have clients
+                                    raving about. With a commitment to excellence, integrity in our work and specialized market
+                                    expertise, let Solara Communications be your marketing source.There is only one mission
+                                    statement at Solara Communications…we’re not happy until you are.
+                                </p>
+                                
+                            </div>
+                            
+                             <div class="homelink" >
+                                <a href="javascript:showpage('homepage')"><img src="images/Home_off.jpg" height="31" 
+									onMouseOver="this.src='images/Home_on.jpg'" onMouseOut="this.src='images/Home_off.jpg'"
+								width="33" style="border-style:none"> </a>
+                            </div>
+                            
+                        </div>
+                        
+						<!-----------------------------------------------------start contactus page--------------------------------------------------------------->
+
+                        <div id="contactuspage" style="display:none;">
+                            <div id="contactus_home">
+                                <h2 style="margin-bottom:5px;">Contact</h2>
+                                <h3 style="margin:0px;">A meet and greet. It doesnt cost a thing</h3>
+                                
+                                <form id="contactfrm" name="contactfrm" method="post" >
+                                    
+                                    <div id="contact_left" >
+                                        <!--img src="images/Contact_Heading.png" style="margin-bottom:20"/-->
+                                        <table width="100%" cellpadding="0" cellspacing="0">
+                                            <tr>
+                                                <td colspan="2" style="color:#630c02; ">Call or email us today for a free consultation.</td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2">&nbsp;</td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" style="color:#630c02; ">647-831-5400</td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" style="color:#630c02; ">info@solaracommunications.com</td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2">&nbsp;</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Name*</td>
+                                                <td><input type="text" class="inputtext" id="customername" name="customername"></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Company Name*</td>
+                                                <td><input type="text" class="inputtext" id="companyname" name="companyname"></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Company Website</td>
+                                                <td><input type="text" class="inputtext" id="companywebsite" name="companywebsite"></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Telephone*</td>
+                                                
+                                                <td><input type="text" class="inputtext" id="telephone" name="telephone"></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Email*</td>
+                                                <td><input type="text" class="inputtext" id="email" name="email"></td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" style="color:#630c02; ">&nbsp;</td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" style="color:#630c02; ">* fields are mandatory</td>
+                                            </tr>
+                                            
+                                        </table>
+                                        
+                                        
+                                    </div>
+                                    
+                                    <div id="contact_right" >
+                                        <table width="100%" cellpadding="0" cellspacing="0" >
+                                            <tr>
+                                                <td>What services are you interested in?</td>
+                                            </tr>
+                                            <tr>
+                                                <td><input name="text" type="text" id="services" name="services" class="inputtext"
+                                                           style="width:270;margin-bottom:15;"></td>
+                                            </tr>
+                                            <tr>
+                                                <td>How did you find us? Please specify</td>
+                                            </tr>
+                                            <tr>
+                                                <td style="color:#630c02; ">
+                                                    <input name="radiobutton"  type="radio" value="radiobutton">
+                                                Internet Search Engine</td>
+                                            </tr>
+                                            <tr>
+                                                <td style="color:#630c02; "><input name="radiobutton" type="radio" value="radiobutton">
+                                                Referral / Colleague</td>
+                                            </tr>
+                                            <tr>
+                                                <td style="color:#630c02; "><input name="radiobutton" type="radio" value="radiobutton">
+                                                Directory Listing</td>
+                                            </tr>
+                                            <tr>
+                                                <td style="color:#630c02; "><input name="radiobutton" type="radio" value="radiobutton">
+                                                Other</td>
+                                            </tr>
+                                            <tr>
+                                                <td>&nbsp;</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Your Inquiry</td>
+                                            </tr>
+                                            <tr>
+                                                <td><label>
+                                                        <textarea name="textarea" style="width:270;height:50;" id="enquiry" name="enquiry"></textarea>
+                                                </label></td>
+                                            </tr>
+											<tr>
+                                                <td>&nbsp;</td>
+                                            </tr>
+                                            <tr>
+                                                <td align="right" ><a ><img  src="images/Contact_Submit_Button.png" height="13" width="44" class="contact_submit_img" 
+                                                                             onClick="javascript:submitForm()"></a>
+                                                    
+                                                </td>
+                                            </tr>
+                                            
+                                        </table>
+                                        
+                                    </div>
+                                    
+                                </form>
+                                
+                            </div>
+							 <div class="homelink" >
+                                <a href="javascript:showpage('homepage')"><img src="images/Home_off.jpg" height="31" 
+									onMouseOver="this.src='images/Home_on.jpg'" onMouseOut="this.src='images/Home_off.jpg'"
+								width="33" style="border-style:none"> </a>
+                            </div>
+                            
+                        </div>
+
+                        
+                        
+                        <!-----------------------------------------------------page div end--------------------------------------------------------------->
+						
+                      
 
 </div>
 
 
 <div id="banner" > 
    <div id="slides">
-		<div class="transition:fade duration:1000 red"><img src="images/1.JPG"> </div>
-		<div class="transition:fade duration:1000 green"><img src="images/2.JPG"></div>
-		<div class="transition:fade duration:1000 blue"><img src="images/3.JPG"></div>
-		<div class="transition:fade duration:1000 red"><img src="images/4.JPG"></div>
-		<div class="transition:fade duration:1000 green"><img src="images/5.JPG"></div>
-		<div class="transition:fade duration:1000 blue"><img src="images/6.JPG"></div>
-		<div class="transition:fade duration:1000 red"><img src="images/7.JPG"> </div>
-		<div class="transition:fade duration:1000 green"><img src="images/8.JPG"></div>
-		<div class="transition:fade duration:4000 blue"><img src="images/9.JPG"></div>
-		<div class="transition:fade duration:4000 red"><img src="images/10.JPG"></div>
-		<div class="transition:fade duration:4000 green"><img src="images/11.JPG"></div>
+		<div class="transition:fade duration:1000 red"><img src="images/1.jpg"> </div>
+		<div class="transition:fade duration:1000 green"><img src="images/2.jpg"></div>
+		<div class="transition:fade duration:1000 blue"><img src="images/3.jpg"></div>
+		<div class="transition:fade duration:1000 red"><img src="images/4.jpg"></div>
+		<div class="transition:fade duration:1000 green"><img src="images/5.jpg"></div>
+		<div class="transition:fade duration:1000 blue"><img src="images/6.jpg"></div>
+		<div class="transition:fade duration:1000 red"><img src="images/7.jpg"> </div>
+		<div class="transition:fade duration:1000 green"><img src="images/8.jpg"></div>
+		<div class="transition:fade duration:3000 blue"><img src="images/9.jpg"></div>
+		<div class="transition:fade duration:3000 red"><img src="images/10.jpg"></div>
+		<div class="transition:fade duration:3000 green"><img src="images/11.jpg"></div>
 	</div>	
 </div>	
 	
@@ -171,7 +525,7 @@
 				<table width="100%"  cellpadding="0" cellspacing="0">
 				<tr  height="45">
 					<td width="289" height="45" align="right" ><img src="images/footer_Part1.png" ></td>
-					<td width="118" align="left" ><a href="privacy.html">
+					<td width="118" align="left" ><a href="javascript:showpage('privacypage')">
 						<img src="images/footer_part2.png" onMouseOver="this.src='images/footer_part2_mouseover.png'" 
 														   onMouseOut="this.src='images/footer_part2.png'"></a></td>
 					<td width="164">&nbsp;</td>
@@ -179,8 +533,18 @@
 					<td width="256" align="left"><a href="mailus.html">
 						<img src="images/footer_part4.png" onMouseOver="this.src='images/footer_part4_mouseover.png'" 
 														   onMouseOut="this.src='images/footer_part4.png'"></a></td>
-					<td width="30" align="left"><a href="#"><img src="images/footer_part5_facebook.png" ></a></td>
-					<td width="54" align="left" ><a href="#"><img src="images/footer_part6_twitter.png" ></a></td>
+					<td width="30" align="left">
+					<!--a name="fb_share" type="button_count" share_url="www.makeroute.com" href="http://www.facebook.com/sharer.php">
+					<!--img src="images/footer_part5_facebook.png" style="border-style:none;background-repeat:no-repeat">&nbsp;</a>
+					<script src="http://static.ak.fbcdn.net/connect.php/js/FB.Share" type="text/javascript"></script-->
+					<a name="fb_share" type="icon_link" share_url="www.makeroute.com"  href="http://www.facebook.com/sharer.php" style="border-style:none">&nbsp;</a>
+					<script src="http://static.ak.fbcdn.net/connect.php/js/FB.Share" type="text/javascript"></script>
+					</td>
+					<td width="54" align="left" ><!--a href="#"><img src="images/footer_part6_twitter.png" ></a-->					
+					<a href="http://twitter.com/YourLink" target="_blank">
+					<img src="images/footer_part6_twitter.png"  /></a>
+					
+					</td>
 				</tr>
 				
 				</table>
