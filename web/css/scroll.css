@@ -1,0 +1,63 @@
+
+
+.scrollholder
+{
+    float: left;
+    margin: 0 ;
+}
+
+#operaBug
+{
+    overflow: hidden;
+}
+
+.revert
+{
+    direction: rtl;
+    unicode-bidi: bidi-override;
+    text-align: left;
+}
+
+div.scrollholder
+{
+    position: relative;
+    width: 310px; height: 125px;
+    overflow: auto;
+    z-index: 1;
+    background-color: #f3f3f3;
+}
+
+div.scroll
+{
+    position: absolute;
+    left: 0; top: 0;
+    width: 95%;
+    z-index: 2;
+}
+
+/* <Scroll> */
+div.track
+{
+    position: relative;
+    float:right;
+    top: 0; 
+    width: 8px; 
+	height: 100%;
+    font-size: 0;
+    z-index: 3;
+    background:white;
+	background-image:url(../images/Scroll_track.png);
+	background-repeat:no-repeat;
+}
+
+div.drag_bar
+{
+    position: absolute;
+    width: 8px; 
+	height: 8px;
+    cursor: pointer;
+    z-index: 4;
+    background: white;	
+	background-image:url(../images/Scroll_knob.png);
+	background-repeat:no-repeat;
+}  

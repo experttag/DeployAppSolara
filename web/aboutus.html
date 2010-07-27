@@ -3,30 +3,17 @@
 <head>
    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
    <title>Solara communications : file sharing</title>     
-   <link href="css/solarastylehome.css" rel="stylesheet" type="text/css" media="screen"> 
-      <link href="css/lightbox.css" rel="stylesheet" type="text/css" media="screen">  
-
-   <script type="text/javascript" src="js/mootools.js"></script>
-	<script type="text/javascript" src="js/slideshow.js"></script>
-	<script type="text/javascript" src="js/lightbox.js"></script>
-	
+   <link href="css/solarastylehome.css" rel="stylesheet" type="text/css" media="screen">  
 	<style type="text/css">img, div, a { behavior: url(iepngfix.htc) }</style>
 	
-	<script type="text/javascript">		
-	//<![CDATA[
-	  window.addEvent('domready', function(){
-	    var data = {
-	      '1.jpg': { caption: 'Volcano Asención in Ometepe, Nicaragua.' }, 
-	      '2.jpg': { caption: 'A Ceibu tree.' }, 
-	      '3.jpg': { caption: 'The view from Volcano Maderas.' }, 
-	      '4.jpg': { caption: 'Beer and ice cream.' }
-	    };
-	    var myShow = new Slideshow('show', data, {mode:'rand' , controller: false, height: 172,linked: false,delay: 5000, hu: 'images/', thumbnails: false, width: 1002});
-	  });
-	  
-
-	//]]>
+	<link rel="stylesheet" type="text/css" href="css/slideshowstyle.css" />
+	<script type="text/javascript" src="js/mootools-1.2.4-core-nc.js"></script>
+	<script type="text/javascript" charset="utf-8" src="js/Fx.Elements.js"></script>
+	<script type="text/javascript" charset="utf-8" src="js/Loop.js"></script>
+	<script type="text/javascript" charset="utf-8" src="js/SlideShow.js"></script>
+	<script type="text/javascript" charset="utf-8" src="js/demo.js"></script>
 	
+	<script type="text/javascript">		
 	
 	function changeimage(imgName){
 	
@@ -71,11 +58,12 @@
 	
 	
 	
-		<div id="middletext">	
-			<div id="aboutus_home">
+	  <div id="middletext">	
+			<div id="aboutus_home" style="padding-top:20px;">
 			
-			<!--h2>About Solara</h2-->
-			<img src="images/About_Heading.png" />
+			<h2>About Solara</h2>
+			<h3>Solara communications working for you</h3>
+			
 			<p>
 			 Solara Communications. Working for you.Solara Communications is a full service, marketing
 company that works with you from conception to execution but we don’t stop there. Unlike
@@ -91,17 +79,32 @@ statement at Solara Communications…we’re not happy until you are.
 			</div>	
 		
 			
+			</p>
 			
 		
 		</div>
+		
+		<div class="homelink">			
+					<a href="index.html"><img src="images/Home_off.jpg" ></a>
+			</div>
 
 </div>
 
 
-<div id="banner"> 
-   <div id="show" class="slideshow">
-    <img src="images/1.jpg" alt="Volcano Asención in Ometepe, Nicaragua." />
-  </div>
+<div id="banner" > 
+   <div id="slides">
+		<div class="transition:fade duration:1000 red"><img src="images/1.JPG"> </div>
+		<div class="transition:fade duration:1000 green"><img src="images/2.JPG"></div>
+		<div class="transition:fade duration:1000 blue"><img src="images/3.JPG"></div>
+		<div class="transition:fade duration:1000 red"><img src="images/4.JPG"></div>
+		<div class="transition:fade duration:1000 green"><img src="images/5.JPG"></div>
+		<div class="transition:fade duration:1000 blue"><img src="images/6.JPG"></div>
+		<div class="transition:fade duration:1000 red"><img src="images/7.JPG"> </div>
+		<div class="transition:fade duration:1000 green"><img src="images/8.JPG"></div>
+		<div class="transition:fade duration:4000 blue"><img src="images/9.JPG"></div>
+		<div class="transition:fade duration:4000 red"><img src="images/10.JPG"></div>
+		<div class="transition:fade duration:4000 green"><img src="images/11.JPG"></div>
+	</div>	
 </div>	
 	
 	

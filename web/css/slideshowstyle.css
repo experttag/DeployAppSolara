@@ -1,0 +1,28 @@
+div#slides {
+	width: 1002px;
+	height: 172px;
+	overflow: hidden;
+}
+
+div#slides div {
+	height: 172px;
+	width: 1002px;
+	font-size: 100px;
+	line-height: 172px;
+	text-align: center;
+	color: #fff;
+}
+
+ul#ticker {
+	height: 1.4em;
+	overflow: hidden;
+	border: solid 1px #aaa;
+	background: #ccc;
+}
+
+ul#ticker li {
+	padding: 0.2em 0;
+}
+
+
+
