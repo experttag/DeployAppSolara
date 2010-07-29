@@ -9,11 +9,14 @@
             function opendiv(divid){
                 document.getElementById(divid).style.display="";
             }
+			
 
             function togglediv(divid){
 
-                if(document.getElementById(divid).style.display=="none")
+                if(document.getElementById(divid).style.display=="none"){
                     document.getElementById(divid).style.display="";
+					//document.getElementById("scroll1").style.height = "400px";
+				}
                 else
                     document.getElementById(divid).style.display="none"
             }
@@ -22,7 +25,7 @@
 
 		//method to hidle all page section and display the one given as parameter
 		function showpage(theid){ 
-			var thearray= new Array("homepage","servicepage", "privacypage","contactuspage","clientpage","aboutuspage"); 
+			var thearray= new Array("homepage","servicepage", "privacypage","contactuspage","clientpage","aboutuspage","mailuspage"); 
 	
 			for(i=0; i<thearray.length; i++){ 				  
 				document.getElementById(thearray[i]).style.display="none"; 
@@ -30,6 +33,34 @@
 			   
 			   document.getElementById(theid).style.display="";  
 		}
+		
+		
+		function submitmailus(){
+		
+		if(validatemail()){
+			document.mailusfrm.submit();
+			alert("your mail sent successfully, \n our customer executive will contact you shortly"); 
+		}
+			
+		}
+		
+		
+		function validatemail(){
+			var error="";
+			errorcolor = "Yellow";
+			normalcolor = "white";
+			error=error+ isValidEmail("mailusfrm","mailus_mailid",errorcolor,normalcolor);		   
+		    error=error+ isSpecialCharacters("mailusfrm","mailus_enquiry",errorcolor,normalcolor);	
+			
+			if((error!="")) {
+			  alert(error);	  
+			  return false;
+		   }
+		   
+		   return true;
+			
+		}
+		
 		
 		
 		function submitForm(){

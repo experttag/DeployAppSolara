@@ -38,19 +38,24 @@
                             
                             <img id="Image-Maps_5201007141517415" src="images/menu.png" usemap="#Image-Maps_5201007141517415" border="0" width="293" height="278" alt="" />
                             <map id="_Image-Maps_5201007141517415" name="Image-Maps_5201007141517415">
-                                <area shape="rect" coords="191,12,241,50" href="javascript:showpage('aboutuspage')"  alt="aboutus" title="aboutus"
+                                <area shape="poly" coords="146,3,311,3,315,110,290,118,231,55,153,26,"  
+									  href="javascript:showpage('aboutuspage')"  alt="aboutus" title="aboutus"
                                       onmouseover="javascript:changeimage('images/menu_aboutus.png')"
                                       onMouseOut="javascript:changeimage('images/menu.png')"  />
-                                <area shape="rect" coords="65,34,132,96" href="javascript:showpage('contactuspage')" alt="contactus" title="contactus"
+                                <area shape="rect" coords="63,30,136,99"  href="javascript:showpage('contactuspage')" alt="contactus" title="contactus"
                                       onmouseover="javascript:changeimage('images/menu_contact.png')"
                                       onMouseOut="javascript:changeimage('images/menu.png')"  />
-                                <area shape="rect" coords="68,168,114,202" href="javascript:showpage('clientpage')" alt="clients" title="clients"
+                                <area shape="poly" coords="140,202,85,157,45,108,32,50,13,117,23,161,68,208,128,212," 
+									   href="javascript:showpage('clientpage')" alt="clients" title="clients"
                                       onmouseover="javascript:changeimage('images/menu_client.png')"
                                       onMouseOut="javascript:changeimage('images/menu.png')"  />
-                                <area shape="rect" coords="179,192,242,226" href="javascript:showpage('servicepage')" alt="services" title="services"
+                                <area shape="poly" coords="252,129,167,223,109,243,38,230,164,280,241,249,267,193,258,135," 
+									   href="javascript:showpage('servicepage')" alt="services" title="services"
                                       onmouseover="javascript:changeimage('images/menu_services.png')"
                                       onMouseOut="javascript:changeimage('images/menu.png')"  />
-                                <area shape="rect" coords="291,276,293,278" href="index.php?aff=mapped_users_5201007141517415" title="Image Map" />
+                                <area shape="rect" coords="291,276,293,278" href="index.php?aff=mapped_users_5201007141517415" title="Image Map" />											
+
+								
                             </map>
                    </div>
 			
@@ -166,30 +171,262 @@
                             
                             <div id="services_list" style="margin-top:50px;">
                                 <DIV id="scrollholder1" class="scrollholder" >
-										<DIV id="scroll1" class="scroll" style="width: 279px; top: 0px; left: 0px; visibility: visible; ">
+										<DIV id="scroll1" class="scroll" style="width: 300px; top: 0px; left: 0px; visibility: visible; height:700px;">
 								
-											<p style="padding-top:5px;">
-																<ul class="homelist" >
-																	<li><a href="#">Media</a></li>
-																	<li><a href="#">Analytics</a></li>
-																	<li><a href="#">Branding</a></li>
-																	<li><a href="#">Marketing</a></li>
-																	<li><a href="#">Advertising</a></li>
-																	<li style="cursor:pointer;" onClick="javascript:togglediv('Photography')"><a href="#">Photography </a></li>
-																	<div id="Photography" style="display:none">
+											<p style="">
+																<ul class="servicelist" >
+																	<li style="cursor:pointer;" onClick="javascript:togglediv('Media')">
+																	<a href="#">Media</a></li>
+																	<div id="Media" style="display:none">
 																		<ul>
-																			<li><a href="#">Editing & Retouching</a></li>
-																			<li><a href="#">Image Sourcing</a></li>
-																			<li><a href="#">Custom Photography</a></li>
-																			<li><a href="#">Location Scouting</a></li>
-																			<li><a href="#">Talent / Casting</a></li>
+																			<li>Media Strategy & Planning</li>
+																			<li>Media Buying</li>
+																			<li>Trafficking & Distribution</li>
+																			<li>Media Production</li>
+																		 </ul>
+																	</div>	 	
+																	
+																	<li style="cursor:pointer;" onClick="javascript:togglediv('Analytics')">
+																	<a href="#">Analytics</a></li>
+																	<div id="Analytics" style="display:none">
+																		<ul>
+																			<li>Market Analysis</li>
+																			<li>Competitive Analysis</li>
+																			<li>Consumer Research  / Surveys</li>
+																			<li>Focus Groups / Telephone Survey</li>
+																			<li>Web Analytics & Optimization</li>
+																			<li>Post Campaign Analysis</li>
 																		</ul>
 																	</div>
-																	<li><a href="#">Public Relations</a></li>
-																	<li><a href="#">Motion Graphics</a></li>
-																	<li><a href="#">Online Marketing</a></li>
-																	<li><a href="#">Video Production</a></li>
-								
+
+																	<li style="cursor:pointer;" onClick="javascript:togglediv('Branding')">
+																	<a href="#">Branding</a></li>
+																	<div id="Branding" style="display:none">
+																		<ul>
+																		   <li>Branding</li>
+																		   <li>Logo Design</li>
+																		   <li>Tagline Creation</li>
+																		   <li>USP Positioning Statements</li>
+																		   <li>Corporate Guidelines / Branding Manuals</li>
+																		   <li>Stationery</li>
+																		 </ul>
+																	</div>	   
+
+																	<li style="cursor:pointer;" onClick="javascript:togglediv('Marketing')">
+																	<a href="#">Marketing</a></li>
+																	<div id="Marketing" style="display:none">
+																		<ul>
+																			<li>Product Marketing</li>
+																			<li>Experiential Marketing</li>
+																			<li>Multi-cultural Marketing</li>
+																			<li>Customer Relationship Marketing</li>
+																			<li>Direct Marketing</li>
+																			<li>Online Marketing</li>
+																		</ul>
+																	</div>		
+
+																	<li style="cursor:pointer;" onClick="javascript:togglediv('Advertising')">
+																	<a href="#">Advertising</a></li>
+																	<div id="Advertising" style="display:none">
+																		<ul>
+																		  <li>Direct Mail Campaigns</li>
+																		  <li>Print Advertising</li>
+																		  <li>Online Advertising</li>
+																		  <li>Contests</li>
+																		  <li>Product Demos</li>
+																		  <li>Outdoor Advertising</li>
+																		 </ul>
+																	</div>	  
+
+																	<li style="cursor:pointer;" onClick="javascript:togglediv('Photography')">
+																	<a href="#">Photography </a></li>
+																	<div id="Photography" style="display:none">
+																		<ul>
+																			<li>Editing & Retouching</li>
+																			<li>Image Sourcing</li>
+																			<li>Custom Photography</li>
+																			<li>Location Scouting</li>
+																			<li>Talent / Casting</li>
+																		</ul>
+																	</div>
+																	
+																	<li style="cursor:pointer;" onClick="javascript:togglediv('PublicRelations')">
+																	<a href="#">Public Relations</a></li>
+																	<div id="PublicRelations" style="display:none">
+																		<ul>
+																			<li>Press Releases</li>
+																			<li>Press Conferences</li>
+																			<li>Media Relations</li>
+																		</ul>
+																	</div>
+
+																		
+																	
+																	<li style="cursor:pointer;" onClick="javascript:togglediv('MotionGraphics')">
+																	<a href="#">Motion Graphics</a></li>
+																	<div id="MotionGraphics" style="display:none">
+																		<ul>
+																			<li>Flash Animation</li>
+																			<li>3D Animation</li>
+																			<li>Product Demos</li>
+																		</ul>
+																	</div>		
+																	
+																	
+																	<li style="cursor:pointer;" onClick="javascript:togglediv('OnlineMarketing')">
+																	<a href="#">Online Marketing</a></li>
+																	<div id="OnlineMarketing" style="display:none">
+																		<ul>
+																			<li>E-mail & Newsletter Campaigns</li>
+																			<li>Link Building & Social Bookmarking</li>
+																			<li>Blogs, Podcasting, RSS Feeds</li>
+																			<li>Banner Ads</li>
+																			<li>Search Engine Optimization (SEO)</li>
+																			<li>Search Engine Marketing (SEM)</li>
+																			<li>Pay-per-click (PPC) Campaigns</li>
+																			<li>Social Media</li>
+																		</ul>
+																	</div>		
+																	
+																	
+																	<li style="cursor:pointer;" onClick="javascript:togglediv('VideoProduction')">
+																	<a href="#">Video Production</a></li>
+																	<div id="VideoProduction" style="display:none">
+																		<ul>
+																			<li>Ideation & Storyboarding</li>
+																			<li>Editing</li>
+																			<li>Video Production</li>
+																		</ul>
+																	</div>		
+																	
+																	
+																	
+																	<li style="cursor:pointer;" onClick="javascript:togglediv('RadioProduction')">
+																	<a href="#">Radio Production</a></li>
+																	<div id="RadioProduction" style="display:none">
+																		<ul>
+																			<li>Script Writing</li>
+																			<li>Radio Production</li>
+																			<li>Trafficking & Distribution</li>
+																		</ul>
+																	</div>	
+																	
+																	<li style="cursor:pointer;" onClick="javascript:togglediv('RetailAdvertising')">
+																	<a href="#">Retail Advertising</a></li>
+																	<div id="RetailAdvertising" style="display:none">
+																		<ul>
+																			<li>Interactive Kiosks</li>
+																			<li>Product Launches</li>
+																			<li>Packaging Design & Production</li>
+																			<li>Point-of-Sale Advertising</li>
+																			<li>Signage</li>
+																		</ul>
+																	</div>		
+																	
+																	<!-- -->																
+																	<li style="cursor:pointer;" onClick="javascript:togglediv('EventManagement')">
+																	<a href="#">Event Management</a></li>
+																	<div id="EventManagement" style="display:none">
+																		<ul>
+																			<li>Seasonal Events</li>
+																			<li>Promotional Events</li>
+																			<li>Charitable Functions</li>
+																			<li>Cultural Events</li>
+																			<li>Retail Showcases / Fashion Shows</li>
+																			<li>Launch Events</li>
+																			<li>Product Launches </li>
+																		</ul>
+																	</div>	
+																	
+																	
+																	<li style="cursor:pointer;" onClick="javascript:togglediv('CorporatePlanning')">
+																	<a href="#">Corporate Planning</a></li>
+																	<div id="CorporatePlanning" style="display:none">
+																		<ul>
+																			<li>Business Plan Development</li>
+																			<li>Internal / Employees Programs</li>
+																			<li>Tradeshows &amp; Exhibits</li>
+																			<li>Education Seminars</li>
+																			<li>Sales &amp; Marketing Conferences</li>
+																			<li>Business Meetings</li>
+																			<li>PowerPoint Presentations</li>
+																		</ul>
+																	</div>	
+																	
+																	
+																	<li style="cursor:pointer;" onClick="javascript:togglediv('TelevisionProduction')">
+																	<a href="#">Television Production</a></li>
+																	<div id="TelevisionProduction" style="display:none">
+																		<ul>
+																			<li>Commercial Development &amp; Storyboard</li>
+																			<li>Broadcast Production</li>
+																			<li>Trafficking &amp; Distribution</li>																			
+																		</ul>
+																	</div>	
+																	
+																	
+																	<li style="cursor:pointer;" onClick="javascript:togglediv('StrategyConsulting')">
+																	<a href="#">Strategy &amp; Consulting</a></li>
+																	<div id="StrategyConsulting" style="display:none">
+																		<ul>
+																			<li>Strategy / Discovery Sessions</li>
+																			<li>Project Management</li>
+																			<li>Operations &amp; Process Development </li>
+																			<li>Employee Training</li>
+																			<li>Print Production Management</li>
+																			<li>Graphic Design Services</li>
+																			<li>Concept Development</li>
+																		</ul>
+																	</div>	
+																	
+																	<li style="cursor:pointer;" onClick="javascript:togglediv('CopywritingTranslation')">
+																	<a href="#">Copywriting & Translation</a></li>
+																	<div id="CopywritingTranslation" style="display:none">
+																		<ul>
+																			<li>Headline Development</li>
+																			<li>Translation – any language</li>
+																			<li>Transcreation</li>																			
+																		</ul>
+																	</div>	
+																	
+																	<li style="cursor:pointer;" onClick="javascript:togglediv('SocialMedia')">
+																	<a href="#">Social Media & Application Development</a></li>
+																	<div id="SocialMedia" style="display:none">
+																		<ul>
+																			<li>Mobile Applications</li>
+																			<li>Social Media Applications & Tools</li>
+																			<ul>
+																			   <li>Wikis</li>
+																			   <li>Facebook</li>
+																			   <li>YouTube</li>
+																			   <li>MySpace</li>
+																			   <li>Twitter</li>
+																			 </ul>
+																			 <li>Facebook Advertising</li>
+																			 <li>Facebook Like Pages</li>
+																			 <li>Facebook Contests</li>
+																			 <li>Facebook Coupons</li>
+																		</ul>
+																	</div>	
+																	
+																	
+																	<li style="cursor:pointer;" onClick="javascript:togglediv('WebsiteCreation')">
+																	<a href="#">Website Creation & Refresh</a></li>
+																	<div id="WebsiteCreation" style="display:none">
+																		<ul>
+																			<li>Usability & Information Architecture</li>
+																			<li>Interface & Wireframe Design</li>
+																			<li>Website Design</li>
+																			<li>Interactive Websites</li>
+																			<li>Intranets</li>
+																			<li>Microsites</li>
+																			<li>Content Management Systems</li>
+																			<li>Database Development</li>
+																			<li>E-commerce / Shopping Carts</li>
+																			<li>Online Virtual Tours</li>
+																		</ul>
+																	</div>	
+																	
 																</ul>
 								
 															</p>
@@ -241,26 +478,31 @@
                                 <DIV id="scrollholder2" class="scrollholder" style="margin-top:30px;">
 										<DIV id="scroll2" class="scroll" style="width: 279px; top: 0px; left: 0px; visibility: visible; ">
 							
-											<p style="margin-top:10px;">
-																	<ul class="homelist" >
-																		<li><a href="#">Automotive</li></a>
-																		<li><a href="#">Banking &amp; Financial</li></a>
-																		<li><a href="#">Education</li></a>
-																		<li><a href="#">Electronics &amp; Computers</li></a>
-																		<li><a href="#">Health &amp; Beauty</li></a>
-																		<li><a href="#">Hospitality</li></a>
-																		<li><a href="#">Marketing Service</li></a>
-																		<li><a href="#">Medical / R &amp; D</li></a>
-																		<li><a href="#">Professional Service</li></a>
-																		<li><a href="#">Property Management</li></a>
-																		<li><a href="#">Real Estate</li></a>
-																		<li><a href="#">Restaurant Retail</li></a>
-																		<li><a href="#">Software</li></a>
-																		<li><a href="#">Transportation</li></a>
+											<p style="margin-top:5px;">
+																	<ul class="clientlist" >
+																		<li>Automotive</li>
+																		<li>Banking &amp; Financial</li>
+																		<li>Education</li>
+																		<li>Electronics &amp; Computers</li>
+																		<li>Health &amp; Beauty</li>
+																		<li>Hospitality</li>
+																		<li>Marketing Service</li>
+																		<li>Medical / R &amp; D</li>
+																		<li>Professional Service</li>
+																		<li>Property Management</li>
+																		<li>Real Estate</li>
+																		<li>Restaurant</li>
+																		<li>Retail</li>
+																		<li>Software</li>
+																		<li>Transportation</li>
+																		<li>Technology </li>
+																		<li>Telecommunications</li>
+																		<li>Tourism	</li>
+																		<li>Video Production</li>
 							
 																	</ul>
 							
-																</p>
+											</p>
 									</DIV>
 							
 									<SCRIPT type="text/javascript">
@@ -485,6 +727,35 @@ There are many variations of passages of Lorem Ipsum available, but the majority
                         </div>
 
                         
+						<div id="mailuspage" style="display:none;">
+                            <div id="aboutus_home" >
+                                
+                                <h2>Mail us for more information</h2>
+                                <h3>Solara communications working for you</h3>
+                                <form id="mailusfrm" name="mailusfrm" method="post">
+                                 <table>
+								 <tr><td>your email</td></tr>
+								  <tr><td><input type="text" class="inputtext" id="mailus_mailid" name="mailus_mailid" style="width:270"></td></tr>
+								   <tr><td>message</td></tr>
+								    <tr><td><textarea name="textarea" style="width:270;height:90;" id="enquiry" name="mailus_enquiry"></textarea></td></tr>
+									
+									<td align="right" ><a >
+									<img  src="images/Contact_Submit_Button.png" height="13" width="44" class="contact_submit_img"                                                                              onClick="javascript:submitmailus()">
+																			 </a>
+                                                    
+                                                </td>
+								 </table>
+								 
+                                </form>
+                            </div>
+                            
+                             <div class="homelink" >
+                                <a href="javascript:showpage('homepage')"><img src="images/Home_off.jpg" height="31" 
+									onMouseOver="this.src='images/Home_on.jpg'" onMouseOut="this.src='images/Home_off.jpg'"
+								width="33" style="border-style:none"> </a>
+                            </div>
+                            
+                        </div>
                         
                         <!-----------------------------------------------------page div end--------------------------------------------------------------->
 						
@@ -496,16 +767,16 @@ There are many variations of passages of Lorem Ipsum available, but the majority
 <div id="banner" > 
    <div id="slides">
 		<div class="transition:fade duration:1000 red"><img src="images/1.jpg"> </div>
-		<div class="transition:fade duration:1000 green"><img src="images/2.jpg"></div>
-		<div class="transition:fade duration:1000 blue"><img src="images/3.jpg"></div>
+		<div class="transition:fade duration:500 green"><img src="images/2.jpg"></div>
+		<div class="transition:fade duration:500 blue"><img src="images/3.jpg"></div>
 		<div class="transition:fade duration:1000 red"><img src="images/4.jpg"></div>
-		<div class="transition:fade duration:1000 green"><img src="images/5.jpg"></div>
-		<div class="transition:fade duration:1000 blue"><img src="images/6.jpg"></div>
-		<div class="transition:fade duration:1000 red"><img src="images/7.jpg"> </div>
-		<div class="transition:fade duration:1000 green"><img src="images/8.jpg"></div>
-		<div class="transition:fade duration:3000 blue"><img src="images/9.jpg"></div>
-		<div class="transition:fade duration:3000 red"><img src="images/10.jpg"></div>
-		<div class="transition:fade duration:3000 green"><img src="images/11.jpg"></div>
+		<div class="transition:fade duration:3000 green"><img src="images/5.jpg"></div>
+		<div class="transition:fade duration:3000 blue"><img src="images/6.jpg"></div>
+		<div class="transition:fade duration:3000 red"><img src="images/7.jpg"> </div>
+		<div class="transition:fade duration:3000 green"><img src="images/8.jpg"></div>
+		<div class="transition:fade duration:4000 blue"><img src="images/9.jpg"></div>
+		<div class="transition:fade duration:4000 red"><img src="images/10.jpg"></div>
+		<div class="transition:fade duration:4000 green"><img src="images/11.jpg"></div>
 	</div>	
 </div>	
 	
@@ -530,19 +801,21 @@ There are many variations of passages of Lorem Ipsum available, but the majority
 														   onMouseOut="this.src='images/footer_part2.png'"></a></td>
 					<td width="164">&nbsp;</td>
 					<td width="115" align="right"><img src="images/footer_part3.png" ></td>
-					<td width="256" align="left"><a href="mailus.html">
+					<td width="256" align="left"><a href="javascript:showpage('mailuspage')">
 						<img src="images/footer_part4.png" onMouseOver="this.src='images/footer_part4_mouseover.png'" 
 														   onMouseOut="this.src='images/footer_part4.png'"></a></td>
 					<td width="30" align="left">
 					<!--a name="fb_share" type="button_count" share_url="www.makeroute.com" href="http://www.facebook.com/sharer.php">
 					<!--img src="images/footer_part5_facebook.png" style="border-style:none;background-repeat:no-repeat">&nbsp;</a>
 					<script src="http://static.ak.fbcdn.net/connect.php/js/FB.Share" type="text/javascript"></script-->
-					<a name="fb_share" type="icon_link" share_url="www.makeroute.com"  href="http://www.facebook.com/sharer.php" style="border-style:none">&nbsp;</a>
+					<a name="fb_shar1e" type="icon_link" share_url="www.makeroute.com"  href="http://www.facebook.com/sharer.php" style="border-style:none">
+					<img src="images/footer_part5_facebook.png" style="border-style:none;background-repeat:no-repeat;padding-top:4">
+					</a>
 					<script src="http://static.ak.fbcdn.net/connect.php/js/FB.Share" type="text/javascript"></script>
 					</td>
 					<td width="54" align="left" ><!--a href="#"><img src="images/footer_part6_twitter.png" ></a-->					
 					<a href="http://twitter.com/YourLink" target="_blank">
-					<img src="images/footer_part6_twitter.png"  /></a>
+					<img src="images/footer_part6_twitter.png" style="border-style:none;background-repeat:no-repeat" /></a>
 					
 					</td>
 				</tr>

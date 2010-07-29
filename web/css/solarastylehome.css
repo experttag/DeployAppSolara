@@ -89,7 +89,7 @@ body {
 #logo{        
     padding-right:0em;    
 	float:left;
-	margin:35 0 0 40;
+	margin:35 0 0 35;
 	_margin:35 0 0 20;
 
 }
@@ -154,11 +154,11 @@ body {
 	letter-spacing:1px;
 	font:Helvetica,Arial, sans-serif;
 	margin:8 0 5 0;
-	
+	text-align:justify;
 
 }
 
-.homelist li a{
+.servicelist li a , .servicelist div ul li, .servicelist div ul li ul li , .clientlist li {
 	font-size:0.8em;
 	color:#630c02; 
 	letter-spacing:1px;
@@ -168,8 +168,12 @@ body {
 	
 }
 
-.homelist li a:link, .homelist li a:visited { color: black; text-decoration: none;}
-.homelist li a:active, .homelist li a:hover { color: orange; text-decoration: underline; font-weight:bold; }
+
+
+
+
+.servicelist li a:link, .servicelist li a:visited { color: black; text-decoration: none;}
+.servicelist li a:active, .servicelist li a:hover { color: orange; text-decoration: none; font-weight:bold; }
 
 
 #news h2, #aboutus h2 , #privacy_home h2 ,#services_home h2 ,#client_home h2, #contactus_home h2,#aboutus_home h2 , #testimonial h2{
